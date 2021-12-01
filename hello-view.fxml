@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="478.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment.HelloController">
+   <children>
+      <VBox  layoutX="33.0" layoutY="44.0" prefHeight="160.0" prefWidth="104.0" spacing="15.0">
+         <children>
+            <Label prefHeight="33.0" prefWidth="90.0" text=" Name" textFill="#58c775">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label prefHeight="38.0" prefWidth="90.0" text=" Marks" textFill="#5ca15d">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label prefHeight="36.0" prefWidth="90.0" text=" Rollno" textFill="#519618">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="119.0" layoutY="37.0" prefHeight="143.0" prefWidth="230.0" spacing="15.0">
+         <children>
+            <TextField fx:id="tfName" prefHeight="34.0" prefWidth="230.0" />
+            <TextField fx:id="tfMarks" prefHeight="34.0" prefWidth="230.0" />
+            <TextField fx:id="tfRollno" prefHeight="40.0" prefWidth="230.0" />
+         </children>
+      </VBox>
+      <TableView fx:id="tvBooks" layoutX="358.0" layoutY="21.0" prefHeight="382.0" prefWidth="456.0">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="169.20001220703125" text="Name" />
+          <TableColumn fx:id="colMarks" prefWidth="142.0" text="Marks" />
+            <TableColumn fx:id="colRollno" prefWidth="144.199951171875" text="Rollno" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnInsert" layoutX="63.0" layoutY="412.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="90.0" text="Create" textFill="#0dfa31">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="btnUpdate" layoutX="184.0" layoutY="412.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="104.0" text=" Update" textFill="#3ee80a">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="btnSelect" layoutX="63.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="59.0" prefWidth="90.0" text=" Read" textFill="#17ea3a">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="btnDelete" layoutX="184.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="104.0" text="Delete" textFill="#fa0d0d">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
